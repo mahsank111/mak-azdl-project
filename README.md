@@ -92,7 +92,8 @@ Power BI Dashboard (Business Insights)
 
 ## 📷 Project Diagram
 
-> *(Add your architecture image or diagram here)*
+![az-makproject-architecture](https://github.com/user-attachments/assets/d4aed37d-46c7-4f87-b392-8c0c87d37d6a)
+
 
 ---
 
