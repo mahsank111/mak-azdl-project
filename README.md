@@ -37,7 +37,94 @@ Azure Synapse Serverless SQL (External Tables)
 Power BI Dashboard (Business Insights)
 Special thanks to Ansh Lamba for the detailed masterclass that helped bring this project to life.
 
-👨‍💻 Author & Contact
-Author: Mohd Ahsan Khan
-🔗 LinkedIn Profile
-📂 Project Repository
+
+
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Tool/Service               | Purpose                                              |
+|---------------------------|------------------------------------------------------|
+| **Azure Data Factory**     | Data ingestion from GitHub to ADLS Gen2 (Bronze)     |
+| **Azure Data Lake Gen2**   | Storage for all layers: Bronze, Silver, and Gold     |
+| **Azure Databricks**       | Data transformation using **PySpark**                |
+| **PySpark**                | Distributed processing and data transformation       |
+| **Azure Synapse SQL**      | External tables for querying curated datasets        |
+| **Power BI**               | Interactive reporting and dashboard creation         |
+
+---
+
+## 🗃️ Project Breakdown
+
+### 1️⃣ Data Ingestion (Bronze Layer)
+
+- Used **Azure Data Factory** to copy CSV files from GitHub into the **Bronze** container in ADLS.
+- Stored files in original structure, untouched and unprocessed.
+
+### 2️⃣ Data Transformation (Silver Layer)
+
+- Set up **secure access** between **Databricks and ADLS** using Managed Identity.
+- Loaded raw data files (e.g., Product, Customer, Sales, Returns) into Databricks.
+- Cleaned, filtered, and performed joins using **PySpark**.
+- Saved transformed outputs into the **Silver** container.
+
+### 3️⃣ Data Serving (Gold Layer)
+
+- Created **external tables** in **Azure Synapse Analytics (Serverless SQL)** using `OPENROWSET`.
+- Tables serve as the Gold layer for query and reporting.
+
+### 4️⃣ Reporting (Power BI)
+
+- Connected **Power BI** directly to **Synapse SQL** using **DirectQuery**.
+- Built a dashboard that displays:
+  - **Total Customers** (Card)
+  - **Order Quantity Trends** (Line Chart)
+  - **Revenue by Product Category** (Bar/Pie Chart)
+  - **Top Performing Products** (Horizontal Bar)
+
+---
+
+## 🎓 Key Takeaways
+
+- Practical use of **Medallion Architecture** within Azure.
+- Hands-on experience with **end-to-end ETL** design.
+- Secure integration of Azure services using Managed Identity.
+- Proficient use of **PySpark** for transformation.
+- Real-world simulation of a **Data Engineer’s responsibilities**.
+
+---
+
+## 📷 Project Diagram
+
+> *(Add your architecture image or diagram here)*  
+> You can upload an image in your GitHub repo and reference it like this:  
+> `![Architecture Diagram](images/azure-etl-architecture.png)`
+
+---
+
+## 🌟 Reflection
+
+This project represents the complete lifecycle of a **Cloud Data Engineer** — from data ingestion to delivering business insights. It simulates real-world practices and makes concepts like Medallion Architecture approachable for beginners.
+
+Perfect for showcasing hands-on skills in Azure's modern data stack.
+
+---
+
+## 🤝 Acknowledgements
+
+- Grateful to the data engineering community for insightful content.
+- Special thanks to **Ansh Lamba** for the detailed masterclass that helped bring this project to life.
+
+---
+
+## 👨‍💻 Author & Contact
+
+**Author:** Hemambika Suresh  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/mahsank111)  
+📂 [Project Repository](https://github.com/mahsank111/mak-azdl-project)
+
+---
+
+> ⭐ *If you found this helpful or inspiring, don't forget to star the repo and connect with me on LinkedIn!*
+
