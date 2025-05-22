@@ -18,40 +18,35 @@ Build a scalable Azure-based pipeline that:
 
 ## 🧬 Architecture Overview
 
-```plaintext
 [GitHub CSV Files]
-        |
-        v
+|
+v
 Azure Data Factory (Ingestion Pipeline)
-        |
-        v
+|
+v
 Azure Data Lake Storage Gen2
 ├── Bronze: Raw data (as-is)
 ├── Silver: Cleaned & enriched data (Databricks + PySpark)
 └── Gold: Final analytical tables
-        |
-        v
+|
+v
 Azure Synapse Serverless SQL (External Tables)
-        |
-        v
+|
+v
 Power BI Dashboard (Business Insights)
-Special thanks to Ansh Lamba for the detailed masterclass that helped bring this project to life.
-
-
-
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-| Tool/Service               | Purpose                                              |
-|---------------------------|------------------------------------------------------|
-| **Azure Data Factory**     | Data ingestion from GitHub to ADLS Gen2 (Bronze)     |
-| **Azure Data Lake Gen2**   | Storage for all layers: Bronze, Silver, and Gold     |
-| **Azure Databricks**       | Data transformation using **PySpark**                |
-| **PySpark**                | Distributed processing and data transformation       |
-| **Azure Synapse SQL**      | External tables for querying curated datasets        |
-| **Power BI**               | Interactive reporting and dashboard creation         |
+| Tool/Service             | Purpose                                              |
+|--------------------------|------------------------------------------------------|
+| **Azure Data Factory** | Data ingestion from GitHub to ADLS Gen2 (Bronze)     |
+| **Azure Data Lake Gen2** | Storage for all layers: Bronze, Silver, and Gold     |
+| **Azure Databricks** | Data transformation using **PySpark** |
+| **PySpark** | Distributed processing and data transformation       |
+| **Azure Synapse SQL** | External tables for querying curated datasets        |
+| **Power BI** | Interactive reporting and dashboard creation         |
 
 ---
 
@@ -97,9 +92,7 @@ Special thanks to Ansh Lamba for the detailed masterclass that helped bring this
 
 ## 📷 Project Diagram
 
-> *(Add your architecture image or diagram here)*  
-> You can upload an image in your GitHub repo and reference it like this:  
-> `![Architecture Diagram](images/azure-etl-architecture.png)`
+> *(Add your architecture image or diagram here)*
 
 ---
 
@@ -120,11 +113,10 @@ Perfect for showcasing hands-on skills in Azure's modern data stack.
 
 ## 👨‍💻 Author & Contact
 
-**Author:** Hemambika Suresh  
-🔗 [LinkedIn Profile](https://www.linkedin.com/in/mahsank111)  
+**Author:** Mohd Ahsan Khan
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/mahsank111)
 📂 [Project Repository](https://github.com/mahsank111/mak-azdl-project)
 
 ---
 
 > ⭐ *If you found this helpful or inspiring, don't forget to star the repo and connect with me on LinkedIn!*
-
