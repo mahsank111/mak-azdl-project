@@ -17,7 +17,7 @@ from pyspark.sql.types import *
 spark.conf.set("fs.azure.account.auth.type.makstoragedatalake.dfs.core.windows.net", "OAuth")
 spark.conf.set("fs.azure.account.oauth.provider.type.makstoragedatalake.dfs.core.windows.net", "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider")
 spark.conf.set("fs.azure.account.oauth2.client.id.makstoragedatalake.dfs.core.windows.net", "abc4af58-e2a4-4933-9edf-43c04a99471b")
-spark.conf.set("fs.azure.account.oauth2.client.secret.makstoragedatalake.dfs.core.windows.net", "jhp8Q~xk-qbnn~OADWdo-a3oISHrD8fG1igexaq3")
+spark.conf.set("fs.azure.account.oauth2.client.secret.makstoragedatalake.dfs.core.windows.net", "jhp8Q~xk-qbnn~OADWdo-xxxxxxxxxxxxx")
 spark.conf.set("fs.azure.account.oauth2.client.endpoint.makstoragedatalake.dfs.core.windows.net", "https://login.microsoftonline.com/2ef0e1df-e30f-44bd-b4ee-1c54e9a8a724/oauth2/token")
 
 # COMMAND ----------
