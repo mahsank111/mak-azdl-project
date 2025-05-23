@@ -120,4 +120,4 @@ Perfect for showcasing hands-on skills in Azure's modern data stack.
 
 ---
 
-> ⭐ *If you found this helpful, don't forget to star the repo and connect with me on LinkedIn!*
+> ⭐ *If you found this helpful or inspiring, don't forget to star the repo and connect with me on LinkedIn!*
